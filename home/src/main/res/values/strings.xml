@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="name_title">Bistro du \n petit Matin</string>
+    <string name="button1">Adresse</string>
+    <string name="button2">Menu</string>
+    <string name="button3">Boissons</string>
+</resources>
