@@ -14,6 +14,7 @@ class HomeFragment : Fragment() {
 
     interface OnButtonClickedListener {
         fun onButton1Clicked()
+        fun onButton2Clicked()
     }
 
     override fun onAttach(context: Context) {
@@ -33,6 +34,11 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button1).setOnClickListener {
             buttonClickListener?.onButton1Clicked()
+        }
+
+        // Ajoutez cet écouteur pour le deuxième bouton
+        view.findViewById<Button>(R.id.button2).setOnClickListener {
+            buttonClickListener?.onButton2Clicked()
         }
     }
 

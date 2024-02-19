@@ -17,3 +17,4 @@ rootProject.name = "bistroapp"
 include ':app'
 include ':home'
 include ':adresse'
+include ':menu-list'

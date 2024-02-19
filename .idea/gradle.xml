@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/adresse" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/menu-list" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import fr.erwandhe.adresse.AdresseFragment
 import fr.erwandhe.home_page.HomeFragment
+import fr.erwandhe.menu_list.MenuFragment
 
 class MainActivity : AppCompatActivity(), HomeFragment.OnButtonClickedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,13 @@ class MainActivity : AppCompatActivity(), HomeFragment.OnButtonClickedListener {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, AdresseFragment())
             .addToBackStack(null) // Permet de revenir au HomeFragment avec le bouton retour
+            .commit()
+    }
+
+    override fun onButton2Clicked() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, MenuFragment<Any>()) // Assurez-vous que MenuFragment est un Fragment valide
+            .addToBackStack(null)
             .commit()
     }
 }
